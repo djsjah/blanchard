@@ -1,0 +1,31 @@
+/* gallery */
+
+@keyframes slide-x-hide {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+ }
+  100% {
+    transform: translateX(100px);
+    opacity: 0;
+ }
+}
+
+@keyframes slide-x-show {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+ }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+ }
+}
+
+.anim-slide-x-hide {
+  animation: slide-x-hide 1s ease-in-out forwards;
+}
+
+.anim-slide-x-show {
+  animation: slide-x-show 1s ease-in-out forwards;
+}
